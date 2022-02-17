@@ -52,7 +52,6 @@ header {
 }
 
 header h2, h4 {
-    /* color: rgb(0, 162, 255); */
     color: black;
     margin-top: 0px;
 }
@@ -77,14 +76,14 @@ header h4 {
 }
 
 #btn1 {
-    background: url(../images/email.png) no-repeat;
+    background: url(email.png) no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px;
 }
 
 #btn2 {
-    background: url(../images/GitHubLogo.png) no-repeat;
+    background: url(GitHubLogo.png) no-repeat;
     background-size: cover;
     width: 41px;
     height: 40px;
@@ -92,7 +91,7 @@ header h4 {
 }
 
 #btn3 {
-    background: url(../images/linkedin.png) no-repeat;
+    background: url(linkedin.png) no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -279,19 +278,16 @@ p.project {
 
 .form {
     background: pink;
-    width: 60%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
+    /* width: 60%; */
+    
 }
 
 .contact section {
     text-align: center;
-}
-
-#textarea {
-    width: 80%;
 
 }
+
 
 
 
