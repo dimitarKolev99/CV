@@ -1,5 +1,6 @@
-
-
+/* @import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+ */
 
 body {
     background: rgb(243, 235, 235);
@@ -22,7 +23,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     /* background: white; */
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -76,14 +77,14 @@ header h4 {
 }
 
 #btn1 {
-    background: url(email.png) no-repeat;
+    background: url(images/email.png) no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px;
 }
 
 #btn2 {
-    background: url(GitHubLogo.png) no-repeat;
+    background: url(images/GitHubLogo.png) no-repeat;
     background-size: cover;
     width: 41px;
     height: 40px;
@@ -91,7 +92,7 @@ header h4 {
 }
 
 #btn3 {
-    background: url(linkedin.png) no-repeat;
+    background: url(images/linkedin.png) no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -125,11 +126,11 @@ header h4 {
 
     /* margin: 0 auto; */
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     /* background: rgb(0, 162, 255); */
     color: black;
     width: 50%;
@@ -148,7 +149,7 @@ section {
 }
 
 .card-header {
-    background-color: rgba(0,0,0,.03);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     border: 1px solid rgba(0,0,0,.125);
     background-clip: border-box;
@@ -288,7 +289,57 @@ p.project {
 
 }
 
+.btn-scroll {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90vh;
+    left: 90vw;
+
+}
+
+.content {
+padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* DONT TOUCH THIS */
+.media-scorller {
+    width: 30%;
+ 
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+
+    margin: 0 auto;
+
+    
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+@media (min-width: 55em) {
+    .media-scorller {
+        width: 100%;
+    }
+    .media-element > img {
+        width: 100%;
+    }
+}
 
 
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+.media-element > img {
+    width: 300px;
+}
 
 

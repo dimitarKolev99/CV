@@ -39,12 +39,30 @@ function getElementY(query) {
 /*   document.getElementById('scrollMid').addEventListener('click', doScrolling.bind(null, '#middle', 1000))
   document.getElementById('scrollTop').addEventListener('click', doScrolling.bind(null, '#top', 1500))
   document.getElementById('scrollBot').addEventListener('click', doScrolling.bind(null, '#bottom', 4000))
- */  
+ */ 
+
+  
+  function collapseFunction(coll) {
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  } 
+
   function a() {
     document.getElementById('scrollMid').addEventListener('click', doScrolling.bind(null, '#proekt', 1500));
     document.getElementById('scrollTop').addEventListener('click', doScrolling.bind(null, '#mega', 1500));
     document.getElementById('scrollBot').addEventListener('click', doScrolling.bind(null, '#kontakt', 1500));
     document.getElementById('submit').addEventListener('click', callback);     
+    const coll = document.getElementsByClassName("collapsible");
+    collapseFunction(coll);
   }
 
   function callback() {
@@ -56,6 +74,7 @@ function getElementY(query) {
     element.appendChild(para);
 
 }
+
 
   window.onload = a;
   // Or simply:

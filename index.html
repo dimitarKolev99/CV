@@ -13,7 +13,7 @@
     <script src="script.js"></script>
 
     <div class="megaContainer" id="mega">
-        <button id="scrollMid">scroll to middle</button>
+        <button class="btn-scroll" id="scrollMid">scroll to middle</button>
         <header id="header">
             <h2 id="name">Dimitar Kolev</h1>
 
@@ -30,61 +30,75 @@
         <div class="container">
             <section>
                 <div class="card-header">
-                    <h3>afaf</h3>
+                    <h3>Intro</h3>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-                    <a id="download" href="#">Downlaod Resume</a>
+                <p>
+                    I am a student of International Media and Computing at HTW Berlin, currently
+                    at the end of my studies.
+                </p>
+                <p>
+                    After acquiring fundamental knowledge in object-oriented programming
+                    with Java and Javascript as well as an introduction in SQL databases,
+                    I learned useful design patterns and clean code practices. 
+                    Then I chose to specialize in Web Technology so I took a course on Web Development
+                    where I had to build a web application utilizing the MVC pattern.
+                    I learned how to make a NodeJS server, which would serve my HTML/CSS views on the client-side,
+                    and store data in a nosql database.
+                </p>
+                <p>
+                    This semester I worked at idealo internet GmbH as a Project Student. We had to build
+                    a corss-platform mobile application using Google's Flutter framework and the Dart
+                    programming language. Originally, the project was meant to be a mobile application but
+                    after the release of the mobile version, I decided to work further on it and turn it 
+                    into a web application aswell.
+                    Below I go on to explain the development of the web version in more detail.   
+                </p>
+                    <a id="download" href="#">Downlaod CV</a>
             </section>
 
         </div>
     </div>
-
-
+    
+    
     <div id="proekt" class="project">
-        <button id="scrollTop">scroll to top</button>
-        <button id="scrollBot">scroll to bottom</button>
-        <h3>Project</h2>
-
+        <button class="btn-scroll" id="scrollTop">scroll to top</button>
+        <button class="btn-scroll" id="scrollBot">scroll to bottom</button>
+        <h3>Penny Pincher</h2>
+            
             <div class="container">
                 <section>
                     <p>
-                        BLABLBA
+                        The idea of the application is to present the user with discounted products.
                     </p>
                     <p>
-                        afafafafafa
+                        The main feature is the Live Feed where the user receives new bargains in real time. 
                     </p>
-                    <p>fafoakpfaofapf
-
+                    <p>
+                        Furthermore, there is a filtering option and browser page where one can choose
+                        products of specific category, price range and discount percent.
                     </p>
                 </section>
             </div>
+            
+            <button class="collapsible">Show Pictures</button>
+
+            <div class="content">
+                <div class="media-scorller snaps-inline">
+                    <div class="media-element">
+                        <img src="images/LiveFeed1.jpg" alt="LiveFeedDark">
+                    </div>
+                    <div class="media-element">
+                        <img src="images/liveFeed.jpg" alt="LiveFeedLight">
+                    </div>
+                    <div class="media-element">
+                        <img src="images/browser.jpg" alt="browser page">
+                    </div>
+                    <div class="media-element">
+                        <img src="images/extend.jpg" alt="browser page">
+                    </div>
+                </div>
+            </div>
+       
 
             <h3 id="tech">Tech Stack</h3>
 
@@ -93,79 +107,52 @@
                 <div>
 
                     <div id="bla">
-                        <img src="Flutter.png" alt="Flutter Logo" width="100px">
+                        <img src="images/Flutter.png" alt="Flutter Logo" width="100px">
                     </div>
                     <p class="project">
-                        orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur massa vitae tellus
-                        varius
-                        gravida.
-                        Proin dignissim iaculis lacinia. Aliquam interdum sem lacus. Nam ullamcorper, metus sit amet
-                        finibus
-                        molestie,
-                        nibh lorem imperdiet massa, at consequat libero mi nec lorem. Duis ullamcorper maximus aliquam.
-                        Cras
-                        vitae dolor et ligula lacinia sagittis. Donec vel enim porta, tincidunt nisl eget, cursus eros.
-                        Praesent molestie velit id nulla luctus euismod. Ut sed sapien dictum, tincidunt mi id, blandit
-                        lectus. Proin ultricies vestibulum ornare. Nam vulputate erat quis urna tincidunt, a accumsan
-                        odio
-                        gravida. Proin elementum lacinia justo id ultrices.
+                        To build the the frontend, we chose to use Flutter, as it delivers both Android and iOS 
+                        applications with a single code base. I decided to also use it for the web version because
+                        I could reuse a big part of the code. 
                     </p>
                 </div>
 
                 <div>
                     <div id="bla">
-                        <img src="nodejs-1-logo-png-transparent.png" alt="NodeJS Logo" width="100px">
+                        <img src="images/nodejs-1-logo-png-transparent.png" alt="NodeJS Logo" width="100px">
                     </div>
                     <p class="project">
-                        Integer et leo pellentesque ante imperdiet tincidunt. Suspendisse sed felis id felis ullamcorper
-                        consectetur. Integer imperdiet sit amet nulla accumsan maximus. Donec porta finibus neque eu
-                        fermentum. Vivamus aliquam velit vitae mi congue posuere. Maecenas at lacinia tortor. Donec nec
-                        eros
-                        nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        The backend of the application is a Node and Express server that exposes an interface which
+                        is used by the frontend.
                     </p>
                 </div>
 
                 <div>
                     <div id="bla">
-                        <img src="MongoDBLogo.png" alt="MongoDB Logo" width="100px">
+                        <img src="images/MongoDBLogo.png" alt="MongoDB Logo" width="100px">
                     </div>
                     <p class="project">
-                        In mattis velit molestie ultrices bibendum. Cras et faucibus ligula. Maecenas sit amet neque
-                        scelerisque ligula cursus euismod. Curabitur malesuada sollicitudin libero at faucibus.
-                        Phasellus
-                        pulvinar eleifend felis a accumsan. Suspendisse at mi nulla. Quisque sed nisl ac sapien rhoncus
-                        facilisis. Morbi pretium, ex quis condimentum maximus, massa diam suscipit enim, ut rhoncus quam
-                        tellus mollis diam. Quisque sollicitudin efficitur faucibus.
+                        To store the data, I chose MongoDB because it uses the convenient JSON-format.
                     </p>
                 </div>
 
                 <div>
                     <div id="bla">
 
-                        <img src="Amazon-Web-Services-AWS-Logo-Transparent-PNG.png" alt="AWS Logo"
+                        <img src="images/Amazon-Web-Services-AWS-Logo-Transparent-PNG.png" alt="AWS Logo"
                             width="100px" id="aws">
                     </div>
                     <p class="project">
-                        Aenean scelerisque, diam semper sagittis luctus, nibh nibh imperdiet nulla, ut efficitur metus
-                        diam
-                        vitae erat. Suspendisse congue egestas lorem, nec luctus dui porttitor nec. Duis eget velit
-                        ipsum.
-                        Aenean sagittis non enim sit amet dignissim. Nam mattis sed arcu id tristique. Etiam diam purus,
-                        efficitur a tristique at, dapibus a lacus. Donec consequat scelerisque aliquam. Nunc vehicula in
+                        Initially I deployed the app on Heroku which led to some restictions so
+                        I decided to use AWS at the end.
                     </p>
                 </div>
 
                 <div>
                     <div id="bla">
-                        <img src="GitHubLogo.png" alt="GitHub Logo" width="100px" id="gitlogo">
+                        <img src="images/GitHubLogo.png" alt="GitHub Logo" width="100px" id="gitlogo">
                     </div>
                     <p class="project">
-                        dolor in auctor. Vivamus nec sagittis lacus. Sed dignissim, purus ut convallis mattis, orci ante
-                        hendrerit tellus, eu placerat mauris nibh eu nisi. Aliquam facilisis ac nibh a aliquam. Nullam
-                        ultrices nisi erat, vel pretium enim bibendum a. Morbi luctus, nisl in dictum porta, metus velit
-                        commodo felis, sit amet dignissim lectus erat sit amet lacus. Suspendisse ultricies enim egestas
-                        urna feugiat viverra. Nullam pretium, mi at accumsan tincidunt, nunc enim semper neque, vitae
-                        interdum metus dolor nec neque. Aenean id mi sit amet risus imperdiet maximus.
+                        We used the Git version control system to collaborate in the team. 
                     </p>
                 </div>
             </div>
@@ -175,6 +162,7 @@
 
 
     <div id="kontakt" class="contact">
+        <button class="btn-scroll" id="scrollTop">scroll to top</button>
         <h3>Contact me!</h2>
             <section id="commentSection">
                 <form action="">
@@ -188,6 +176,8 @@
                 <button id="submit">Post comment</button>
             </section>
     </div>
+
+   
 
 
 </body>
