@@ -189,7 +189,7 @@ section p {
 */
 
 .project {
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 a.button {
@@ -297,13 +297,12 @@ p.project {
 
 }
 
-.content {
-padding: 0 18px;
-  background-color: white;
+ .content {
+  background-color: pink;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-}
+} 
 
 /* DONT TOUCH THIS */
 .media-scorller {
@@ -320,12 +319,23 @@ padding: 0 18px;
     overscroll-behavior-inline: contain;
 }
 
-@media (min-width: 55em) {
-    .media-scorller {
+@media (max-width: 55em) {
+    .content {
         width: 100%;
     }
-    .media-element > img {
+    .media-scorller {
         width: 100%;
+        margin: 0;
+    }
+
+    .media-element {
+        background: pink;
+        width: 100%;
+    }
+
+    .media-element > img {
+        width: auto;
+        height: auto;
     }
 }
 
