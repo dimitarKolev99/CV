@@ -35,13 +35,7 @@ function getElementY(query) {
     })
   }
   
-  // Apply event handlers. Example of firing the scrolling mechanism.
-/*   document.getElementById('scrollMid').addEventListener('click', doScrolling.bind(null, '#middle', 1000))
-  document.getElementById('scrollTop').addEventListener('click', doScrolling.bind(null, '#top', 1500))
-  document.getElementById('scrollBot').addEventListener('click', doScrolling.bind(null, '#bottom', 4000))
- */ 
-
-  
+ 
   function collapseFunction(coll) {
     for (var i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
