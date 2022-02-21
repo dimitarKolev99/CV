@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="styleCV.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -60,13 +63,14 @@
     </div>
     
     
-    <div id="proekt" class="project">
+    <div id="proekt" class="project ">
         <button class="btn-scroll" id="scrollTop">scroll to top</button>
         <button class="btn-scroll" id="scrollBot">scroll to bottom</button>
-        <h3>Penny Pincher</h2>
+        
             
             <div class="container">
-                <section>
+                <section class="color">
+                    <h3>Penny Pincher</h2>
                     <p>
                         The idea of the application is to present the user discounted products.
                     </p>
@@ -83,6 +87,11 @@
             <button class="collapsible button">Show Pictures</button>
 
             <div class="content">
+                <div class=""  style="margin : 10px ;">
+            <a href="https://dimitarkolev99.github.io/#/" target="_blank"  class="button">Go To Website</a>
+
+                </div>
+
                 <div class="media-scorller snaps-inline">
                     <div class="media-element">
                         <img src="images/LiveFeed1.jpg" alt="LiveFeedDark">
@@ -104,33 +113,33 @@
 
             <div class="columns">
 
-                <div>
+                <div class="stack-card">
 
                     <div id="bla">
                         <img src="images/Flutter.png" alt="Flutter Logo" width="100px">
                     </div>
-                    <p class="project">
+                    <p class="">
                         To build the the frontend, we chose to use Flutter, as it delivers both Android and iOS 
                         applications with a single code base. I decided to also use it for the web version because
                         I could reuse a big part of the code. 
                     </p>
                 </div>
 
-                <div>
+                <div class="stack-card">
                     <div id="bla">
                         <img src="images/nodejs-1-logo-png-transparent.png" alt="NodeJS Logo" width="100px">
                     </div>
-                    <p class="project">
+                    <p class="">
                         The backend of the application is a Node and Express server that exposes an interface which
                         is used by the frontend.
                     </p>
                 </div>
 
-                <div>
+                <div class="stack-card">
                     <div id="bla">
                         <img src="images/MongoDBLogo.png" alt="MongoDB Logo" width="100px">
                     </div>
-                    <p class="project">
+                    <p class="">
                         To store the data, I chose MongoDB because it uses the convenient JSON-format.
                     </p>
                 </div>
@@ -141,17 +150,18 @@
                         <img src="images/Amazon-Web-Services-AWS-Logo-Transparent-PNG.png" alt="AWS Logo"
                             width="100px" id="aws">
                     </div>
-                    <p class="project">
+                    <p class="">
                         Initially I deployed the app on Heroku which led to some restictions so
                         I decided to use GitHub Pages at the end.
                     </p>
                 </div> -->
 
-                <div>
+                <div class="stack-card">
                     <div id="bla">
+                        
                         <img src="images/GitHubLogo.png" alt="GitHub Logo" width="100px" id="gitlogo">
                     </div>
-                    <p class="project">
+                    <p class="">
                         We used the Git version control system to collaborate in the team. 
                         Initially I deployed the app on Heroku which led to some problems so
                         I decided to use GitHub Pages at the end.
@@ -159,16 +169,26 @@
                 </div>
             </div>
 
-            <a href="https://dimitarkolev99.github.io/#/" target="_blank" class="button">Go To Website</a>
     </div>
 
 
     <div id="kontakt" class="contact">
         <h3>Post a comment!</h2>
-            <section id="commentSection">
-                <label for="comments">Message</label><br>
-                <textarea id="textarea" name="comments" rows="10" cols="48"></textarea><br>
-                <button class="button" id="submit">Post</button>
+            <section id="commentSection" style="max-width:90%; justify-content: center; padding: 20px;">
+                <form action="/api/comments" method="post">
+                    <div class="form-item"><label for="fname">Name:</label><br>
+                        <input type="text" class="inp" id="fname" name="fname"><br>
+                    </div>
+                    <div class="form-item"><label for="email">Email:</label><br>
+                        <input  class="inp" type="email" id="email" pattern=".+@globex\.com" size="30"><br>
+                    </div>
+                    <div class="form-item"><label for="comments">Message</label><br>
+                        <textarea id=""  class="inp" name="comments" rows="10" cols="48">Message</textarea><br>
+                    </div>
+                    <div class="form-item">
+                        <button type="submit" style="width: 30%; background-color: #276678; border: none; border-radius: 2px; color: #D3E0EA; min-height: 30px;" >submit</button>
+                    </div>
+                </form>
             </section>
     </div>
 

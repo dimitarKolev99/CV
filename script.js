@@ -41,10 +41,10 @@ function getElementY(query) {
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
+        if (content.style.display == 'block'){
+          content.style.display = 'none';
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+          content.style.display = 'block';
         }
       });
     }
@@ -54,7 +54,7 @@ function getElementY(query) {
     document.getElementById('scrollMid').addEventListener('click', doScrolling.bind(null, '#proekt', 1500));
     document.getElementById('scrollTop').addEventListener('click', doScrolling.bind(null, '#mega', 1500));
     document.getElementById('scrollBot').addEventListener('click', doScrolling.bind(null, '#kontakt', 1500));
-    document.getElementById('submit').addEventListener('click', callback);     
+    // document.getElementById('submit').addEventListener('click', callback);     
     const coll = document.getElementsByClassName("collapsible");
     collapseFunction(coll);
   }

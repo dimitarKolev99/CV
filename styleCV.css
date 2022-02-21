@@ -7,27 +7,29 @@ body {
     color: black;
     font-size: 21px;
     
-    font-family: "Century Gothic", CenturyGothic,
-    AppleGothic, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
-    margin: 0px;
+    margin: 0px;    
+    color: #276678 !important;
 
     text-align: center;
 }
 
 .megaContainer {
-    background: url(https://welcome-moodle.htw-berlin.de/bg_login.jpg) center center!important;
+    background: #1687A7;
     background-size: cover!important;
     background-repeat: no-repeat!important;
     padding-top: 0.5rem;
+    min-height: 100vh;
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #F6F5F5 !important;
+    width: 40%;
     /* background: white; */
     margin: 0 auto;
     margin-top: 0.5rem;
-    width: 50%;
+
     padding-bottom: 10px;
     margin-bottom: 10px;
 
@@ -53,7 +55,8 @@ header {
 }
 
 header h2, h4 {
-    color: black;
+    color: #276678 !important;
+
     margin-top: 0px;
 }
 
@@ -130,10 +133,13 @@ header h4 {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.95);
+    font-weight: 550;
+    background-color: #F6F5F5 !important;
+
     /* background: rgb(0, 162, 255); */
-    color: black;
-    width: 50%;
+    color: #276678 !important;
+
+    width: 40%;
     text-align: start;
     
     margin: 0 auto;
@@ -149,8 +155,9 @@ section {
 }
 
 .card-header {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
+    background-color: #F6F5F5 !important;
+
+        width: 100%;
     border: 1px solid rgba(0,0,0,.125);
     background-clip: border-box;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -164,7 +171,8 @@ section {
     cursor: pointer;
     display: inline;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #276678 !important;
+
     background-color: white;
     padding: 0.5em 1.25em;
     border: 2px solid black;
@@ -189,7 +197,12 @@ section p {
 */
 
 .project {
-    background: rgb(255, 255, 255);
+    background: #D3E0EA;
+    min-height: 100vh;
+}
+.color{
+    padding: 20px !important;
+    background-color: #F6F5F5 !important;
 }
 
 .button {
@@ -199,7 +212,9 @@ section p {
     color: rgb(0, 0, 0);
     background-color: white;
     padding: 0.5em 1.25em;
-    border: 2px solid black;
+    border: 2px solid #276678;
+font-weight: 400;
+    border-radius: 5px;
 }
 
 .button:hover {
@@ -265,16 +280,25 @@ p.project {
     margin: auto auto;
     width: 100px;
     height: 90px;
+    display: flex;
+    justify-content: center;
 }
 
+.stack-card{
+    background-color: #276678;
+    color: #D3E0EA !important;
+    padding: 5px;
+    border-radius: 10px;
+}
 .contact {
-    background: rgba(0, 204, 255, 0.521);
+    background: #276678;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .form {
@@ -286,7 +310,13 @@ p.project {
 
 .contact section {
     text-align: center;
-
+    background-color: #D3E0EA;
+    color: #276678;
+    min-height: 50vh;
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .btn-scroll {
@@ -294,12 +324,17 @@ p.project {
     position: sticky;
     top: 90vh;
     left: 90vw;
-
 }
 
  .content {
-  max-height: 0;
+  /* max-height: 0; */
+  height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+  display: none;
   transition: max-height 0.2s ease-out;
 } 
 
@@ -342,6 +377,7 @@ p.project {
 
 .snaps-inline {
     scroll-snap-type: inline mandatory;
+    margin-top: 20px;
 }
 
 .snaps-inline > * {
@@ -357,3 +393,15 @@ p.project {
 }
 
 
+.form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.inp{
+    width: 100%;
+
+}
