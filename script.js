@@ -1,9 +1,14 @@
 function getElementY(query) {
     return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top
   }
+
+  let x = 0;
+  let secondTime = false;
+
   
   function doScrolling(element, duration) {
-      var startingY = window.pageYOffset
+    x++;
+    var startingY = window.pageYOffset
     var elementY = getElementY(element)
     // If element is close to page's bottom then window will scroll only to some position above the element.
     var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
@@ -48,27 +53,35 @@ function getElementY(query) {
         }
       });
     }
-  } 
-
+  }
+  
+  let y = 0;
+  let yOff = window.pageYOffset;
   function a() {
-    document.getElementById('scrollMid').addEventListener('click', doScrolling.bind(null, '#proekt', 1500));
-    document.getElementById('scrollTop').addEventListener('click', doScrolling.bind(null, '#mega', 1500));
-    document.getElementById('scrollBot').addEventListener('click', doScrolling.bind(null, '#kontakt', 1500));
-    // document.getElementById('submit').addEventListener('click', callback);     
+    let button = document.getElementById('scrollMid');
+    button.addEventListener('click', function () {
+      
+      // print "false" if direction is down and "true" if up
+  console.log(this.oldScroll > this.scrollY);
+  this.oldScroll = this.scrollY;
+
+      if (x == 0) {
+        doScrolling('#proekt', 1500);
+             
+      } else if (x == 1) {
+        doScrolling('#kontakt', 1500);
+        // button.style.visibility='hidden' 
+      } else if (x == 2) {
+        doScrolling('#proekt', 1500);
+      } else if (x == 3) {
+        doScrolling('#mega', 1500);
+        x = 0;
+      }
+  });
+
     const coll = document.getElementsByClassName("collapsible");
     collapseFunction(coll);
   }
-
-  function callback() {
-      console.log(document.getElementById("textarea").value);
-    const para = document.createElement("p");
-    const node = document.createTextNode(document.getElementById("textarea").value);
-    para.appendChild(node);
-    const element = document.getElementById("kontakt");
-    element.appendChild(para);
-
-}
-
 
   window.onload = a;
   // Or simply:

@@ -8,20 +8,20 @@
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="styleCV.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <script src="script.js"></script>
 
+    <button id="scrollMid" class="btn-scroll"></button>
     <div class="megaContainer" id="mega">
-        <button class="btn-scroll" id="scrollMid">scroll to middle</button>
         <header id="header">
-            <h2 id="name">Dimitar Kolev</h1>
+            <h2 id="name">Dimitar Kolev</h2>
 
-                <h3 id="job-postition">Student
-            </h2>
+            <h3 id="job-postition">Student</h3>
 
             <div class="buttonContainer">
                 <a href="mailto:mitko9966@gmail.com" id="btn1"></a>
@@ -36,115 +36,134 @@
                     <h3>Intro</h3>
                 </div>
                 <p>
-                    I am a student of International Media and Computing at HTW Berlin, currently
+                    A student of International Media and Computing at HTW Berlin, currently
                     at the end of my studies.
                 </p>
                 <p>
                     After acquiring fundamental knowledge in object-oriented programming
                     with Java and Javascript as well as an introduction in SQL databases,
-                    I learned useful design patterns and clean code practices. 
+                    I learned useful design patterns and clean code practices.
                     Then I chose to specialize in Web Technology so I took a course on Web Development
                     where I had to build a web application utilizing the MVC pattern.
                     I learned how to make a NodeJS server, which would serve my HTML/CSS views on the client-side,
                     and store data in a nosql database.
                 </p>
                 <p>
-                    This semester I worked at idealo internet GmbH as a Project Student. We had to build
+                    This semester I worked on a university project with idealo internet GmbH. We had to build
                     a cross-platform mobile application using Google's Flutter framework and the Dart
                     programming language. Originally, the project was meant to be a mobile application but
-                    after the release of the mobile version, I decided to work further on it and turn it 
+                    after the release of the mobile version, I decided to work further on it and turn it
                     into a web application aswell.
-                    Below I go on to explain the development of the web version in more detail.   
+                    Below I go on to explain the development of the web version in more detail.
                 </p>
-                    <!-- <a id="download" href="#">Downlaod CV</a> -->
+                <!-- <a id="download" href="#">Downlaod CV</a> -->
             </section>
 
         </div>
     </div>
-    
-    
-    <div id="proekt" class="project ">
-        <button class="btn-scroll" id="scrollTop">scroll to top</button>
-        <button class="btn-scroll" id="scrollBot">scroll to bottom</button>
-        
-            
-            <div class="container">
-                <section class="color">
-                    <h3>Penny Pincher</h2>
+
+
+    <div id="proekt" class="project">
+        <!-- <button class="btn-scroll" id="scrollTop">scroll to top</button>
+        <button class="btn-scroll" id="scrollBot">scroll to bottom</button> -->
+
+
+        <div class="container">
+
+            <h2 style="padding-bottom: 2rem;">Projects</h2>
+
+            <section class="color">
+                <h3>Social Media Project</h2>
+                    <p>
+                        A website where users can post content in form of text and picture.
+                    </p>
+                    <p>
+                        Implemented CRUD operations on the User and Post model. 
+                    </p>
+                    <p>
+                        Stack: Node, Express, MongoDB, Ejs, Heroku
+                    </p>
+                    <a href="https://thawing-wave-03697.herokuapp.com/" target="_blank" class="button">Go To Website</a>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="color">
+                <h3>Penny Pincher</h2>
                     <p>
                         The idea of the application is to present the user discounted products.
                     </p>
                     <p>
-                        The main feature is the Live Feed where the user receives new bargains in real time. 
+                        The main feature is the Live Feed where the user receives new bargains in real time.
                     </p>
                     <p>
                         Furthermore, there is a filtering option and browser page where one can choose
                         products of specific category, price range and discount percent.
                     </p>
-                </section>
+            </section>
+        </div>
+
+        <button class="collapsible button">Show Pictures</button>
+
+        <div class="content">
+            <div class="" style="margin : 10px ;">
+                <a href="https://dimitarkolev99.github.io/#/" target="_blank" class="button">Go To Webversion</a>
+
             </div>
-            
-            <button class="collapsible button">Show Pictures</button>
 
-            <div class="content">
-                <div class=""  style="margin : 10px ;">
-            <a href="https://dimitarkolev99.github.io/#/" target="_blank"  class="button">Go To Website</a>
-
+            <div class="media-scorller snaps-inline">
+                <div class="media-element">
+                    <img src="images/LiveFeed1.jpg" alt="LiveFeedDark">
                 </div>
-
-                <div class="media-scorller snaps-inline">
-                    <div class="media-element">
-                        <img src="images/LiveFeed1.jpg" alt="LiveFeedDark">
-                    </div>
-                    <div class="media-element">
-                        <img src="images/liveFeed.jpg" alt="LiveFeedLight">
-                    </div>
-                    <div class="media-element">
-                        <img src="images/browser.jpg" alt="browser page">
-                    </div>
-                    <div class="media-element">
-                        <img src="images/extend.jpg" alt="browser page">
-                    </div>
+                <div class="media-element">
+                    <img src="images/liveFeed.jpg" alt="LiveFeedLight">
+                </div>
+                <div class="media-element">
+                    <img src="images/browser.jpg" alt="browser page">
+                </div>
+                <div class="media-element">
+                    <img src="images/extend.jpg" alt="browser page">
                 </div>
             </div>
-       
+        </div>
 
-            <h3 id="tech">Tech Stack</h3>
 
-            <div class="columns">
+        <h3 id="tech">Tech Stack</h3>
 
-                <div class="stack-card">
+        <div class="columns">
 
-                    <div id="bla">
-                        <img src="images/Flutter.png" alt="Flutter Logo" width="100px">
-                    </div>
-                    <p class="">
-                        To build the the frontend, we chose to use Flutter, as it delivers both Android and iOS 
-                        applications with a single code base. I decided to also use it for the web version because
-                        I could reuse a big part of the code. 
-                    </p>
+            <div class="stack-card">
+
+                <div id="bla">
+                    <img src="images/Flutter.png" alt="Flutter Logo" width="100px">
                 </div>
+                <p class="">
+                    To build the the frontend, we chose to use Flutter, as it delivers both Android and iOS
+                    applications with a single code base. I decided to also use it for the web version because
+                    I could reuse a big part of the code.
+                </p>
+            </div>
 
-                <div class="stack-card">
-                    <div id="bla">
-                        <img src="images/nodejs-1-logo-png-transparent.png" alt="NodeJS Logo" width="100px">
-                    </div>
-                    <p class="">
-                        The backend of the application is a Node and Express server that exposes an interface which
-                        is used by the frontend.
-                    </p>
+            <div class="stack-card">
+                <div id="bla">
+                    <img src="images/nodejs-1-logo-png-transparent.png" alt="NodeJS Logo" width="100px">
                 </div>
+                <p class="">
+                    The backend of the application is a Node and Express server that exposes an interface which
+                    is used by the frontend.
+                </p>
+            </div>
 
-                <div class="stack-card">
-                    <div id="bla">
-                        <img src="images/MongoDBLogo.png" alt="MongoDB Logo" width="100px">
-                    </div>
-                    <p class="">
-                        To store the data, I chose MongoDB because it uses the convenient JSON-format.
-                    </p>
+            <div class="stack-card">
+                <div id="bla">
+                    <img src="images/MongoDBLogo.png" alt="MongoDB Logo" width="100px">
                 </div>
+                <p class="">
+                    To store the data, I chose MongoDB because it uses the convenient JSON-format.
+                </p>
+            </div>
 
-               <!--  <div>
+            <!--  <div>
                     <div id="bla">
 
                         <img src="images/Amazon-Web-Services-AWS-Logo-Transparent-PNG.png" alt="AWS Logo"
@@ -156,18 +175,18 @@
                     </p>
                 </div> -->
 
-                <div class="stack-card">
-                    <div id="bla">
-                        
-                        <img src="images/GitHubLogo.png" alt="GitHub Logo" width="100px" id="gitlogo">
-                    </div>
-                    <p class="">
-                        We used the Git version control system to collaborate in the team. 
-                        Initially I deployed the app on Heroku which led to some problems so
-                        I decided to use GitHub Pages at the end.
-                    </p>
+            <div class="stack-card">
+                <div id="bla">
+
+                    <img src="images/GitHubLogo.png" alt="GitHub Logo" width="100px" id="gitlogo">
                 </div>
+                <p class="">
+                    We used the Git version control system to collaborate in the team.
+                    Initially I deployed the web version on Heroku which led to some problems so
+                    I decided to use GitHub Pages at the end.
+                </p>
             </div>
+        </div>
 
     </div>
 
@@ -175,24 +194,25 @@
     <div id="kontakt" class="contact">
         <h3>Post a comment!</h2>
             <section id="commentSection" style="max-width:90%; justify-content: center; padding: 20px;">
-                <form action="/api/comments" method="post">
+                <form action="#" method="post">
                     <div class="form-item"><label for="fname">Name:</label><br>
                         <input type="text" class="inp" id="fname" name="fname"><br>
                     </div>
                     <div class="form-item"><label for="email">Email:</label><br>
-                        <input  class="inp" type="email" id="email" pattern=".+@globex\.com" size="30"><br>
+                        <input class="inp" type="email" id="email" pattern=".+@globex\.com" size="30"><br>
                     </div>
                     <div class="form-item"><label for="comments">Message</label><br>
-                        <textarea id=""  class="inp" name="comments" rows="10" cols="48">Message</textarea><br>
+                        <textarea id="" class="inp" name="comments" rows="10" cols="48" placeholder="Message"></textarea><br>
                     </div>
                     <div class="form-item">
-                        <button type="submit" style="width: 30%; background-color: #276678; border: none; border-radius: 2px; color: #D3E0EA; min-height: 30px;" >submit</button>
+                        <button type="submit"
+                            style="width: 30%; background-color: #276678; border: none; border-radius: 2px; color: #D3E0EA; min-height: 30px;">submit</button>
                     </div>
                 </form>
             </section>
     </div>
 
-   
+
 
 
 </body>
